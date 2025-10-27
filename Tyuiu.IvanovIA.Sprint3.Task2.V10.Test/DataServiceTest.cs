@@ -12,7 +12,7 @@ namespace Tyuiu.IvanovIA.Sprint3.Task2.V10.Test
             int startvalue = 1;
             int stopvalue = 13;
 
-            double wait = 1;
+            double wait = 7.5;
             double res = ds.GetMultiplySeries(value, startvalue, stopvalue);
 
             Assert.AreEqual(wait, res);

@@ -6,13 +6,15 @@ namespace Tyuiu.IvanovIA.Sprint3.Task2.V10.Lib
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
             double MultlySeries = 1;
+
             do
             {
-                MultlySeries = MultlySeries * (Math.Pow(value, startValue) + (1 / (startValue + 1)));
+                MultlySeries *= (Math.Pow(value, startValue) + 1.0 / (startValue + 1));
                 startValue++;
-            } while (startValue <= stopValue);
-            
-           
+            }
+            while (startValue <= stopValue);
+
+
 
             return Math.Round(MultlySeries, 3);
         }
