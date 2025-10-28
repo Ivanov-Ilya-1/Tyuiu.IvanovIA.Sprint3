@@ -14,7 +14,7 @@ namespace Tyuiu.IvanovIA.Sprint3.Task5.V18.Lib
                     sumSeries += (Math.Cos(x) + (Math.Pow(k, 2) / 2));
                 }
             }
-            return Math.Round(sumSeries,2);
+            return Math.Round(sumSeries,3);
         }
     }
 }
