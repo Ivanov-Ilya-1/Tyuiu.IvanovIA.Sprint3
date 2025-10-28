@@ -13,16 +13,17 @@ namespace Tyuiu.IvanovIA.Sprint3.Task7.V24.Test
             
             double[] wait;
             wait = new double[((stopValue - startValue) + 1)];
-            wait[0] = 9.09;
-            wait[1] = 7.50;
-            wait[2] = 7.53;
-            wait[3] = 7.47;
-            wait[4] = 5.72;
-            wait[5] = -1.64;
-            wait[6] = -4.16;
-            wait[7] = -5.04;
-            wait[8] = -5.48;
-            wait[9] = -7.07;
+            wait[0] = 7.83;
+            wait[1] = 6.22;
+            wait[2] = 6.36;
+            wait[3] = 6.96;
+            wait[4] = -0.52;
+            wait[5] = 0;
+            wait[6] = -3.3;
+            wait[7] = -5.53;
+            wait[8] = -6.25;
+            wait[9] = -6.63;
+            wait[10] = -8.24;
             double[] res = ds.GetMassFunction(startValue, stopValue);
             CollectionAssert.AreEqual(wait, res);
         }
